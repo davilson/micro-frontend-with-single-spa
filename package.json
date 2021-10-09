@@ -1,0 +1,18 @@
+{
+  "name": "micro-frontend-with-single-spa",
+  "version": "1.0.0",
+  "author": "@davilson",
+  "license": "MIT",
+  "keywords": [
+    "single-spa",
+    "micro front-end"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "prestart": "yarn bootstrap",
+    "start": "lerna run start --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
