@@ -62,6 +62,5 @@
     "react-router-dom": "^5.3.0",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
-  },
-  "types": "dist/foxkey-gateway.d.ts"
+  }
 }

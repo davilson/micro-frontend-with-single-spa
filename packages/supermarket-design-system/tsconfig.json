@@ -2,7 +2,7 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declaration": true
+    "declarationDir": "dist"
   },
   "files": ["src/foxkey-design-system.ts"],
   "include": ["src/**/*"],

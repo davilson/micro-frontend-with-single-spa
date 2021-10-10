@@ -6,11 +6,14 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "prestart": "yarn bootstrap",
-    "start": "lerna run start --stream"
+    "wrk:design-system": "yarn workspace @foxkey/design-system start",
+    "wrk:gateway": "yarn workspace @foxkey/gateway start",
+    "wrk:root": "yarn workspace @foxkey/root-config start",
+    "prestart": "yarn install",
+    "start": "npm-run-all --parallel wrk:*"
   },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "yarn-run-all": "^3.1.1"
   }
 }
