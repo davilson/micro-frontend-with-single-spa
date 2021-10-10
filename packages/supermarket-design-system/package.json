@@ -1,5 +1,7 @@
 {
   "name": "@foxkey/design-system",
+  "version": "1.0.0",
+  "main": "src/foxkey-design-system.ts",
   "scripts": {
     "start": "webpack serve --port 9002",
     "start:standalone": "webpack serve --env standalone",
@@ -58,6 +60,5 @@
     "react-dom": "^17.0.2",
     "single-spa": "^5.9.3",
     "single-spa-react": "^4.3.1"
-  },
-  "types": "dist/foxkey-design-system.d.ts"
+  }
 }

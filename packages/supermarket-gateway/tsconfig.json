@@ -2,9 +2,9 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "declarationDir": "dist"
+    "declaration": true
   },
-  "files": ["src/foxkey-gateway.tsx"],
+  "files": ["src/foxkey-gateway.ts"],
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]
 }

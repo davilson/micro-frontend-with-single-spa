@@ -1,5 +1,7 @@
 {
   "name": "@foxkey/gateway",
+  "version": "1.0.0",
+  "main": "src/foxkey-gateway.ts",
   "scripts": {
     "start": "webpack serve --port 9001",
     "start:standalone": "webpack serve --env standalone",
@@ -49,6 +51,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@foxkey/design-system": "^1.0.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",

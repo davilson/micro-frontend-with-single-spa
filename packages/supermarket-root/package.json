@@ -1,5 +1,7 @@
 {
   "name": "@foxkey/root-config",
+  "version": "1.0.0",
+  "main": "src/foxkey-root-config.ts",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
