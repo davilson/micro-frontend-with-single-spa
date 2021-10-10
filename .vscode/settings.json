@@ -3,5 +3,6 @@
     "./packages/supermarket-root",
     "./packages/supermarket-design-system",
     "./packages/supermarket-gateway",
+    "./packages/supermarket-global-state",
   ]
 }

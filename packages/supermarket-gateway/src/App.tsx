@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 import { foxkeyTheme } from "@foxkey/design-system";
+import { useBearStore } from "@foxkey/global-state";
 
 export default function App() {
   foxkeyTheme.globalStyles();
+  const { bears, increasePopulation } = useBearStore((state) => state);
   return (
     <Router>
       <div>
@@ -20,33 +21,21 @@ export default function App() {
             </li>
           </ul>
         </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            <About />
+            <h2>About</h2>
           </Route>
           <Route path="/users">
-            <Users />
+            <h2>Users </h2>
           </Route>
           <Route path="/">
-            <Home />
+            <section>
+              <h1>{bears} Bears</h1>
+              <button onClick={increasePopulation}>one up</button>
+            </section>
           </Route>
         </Switch>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }

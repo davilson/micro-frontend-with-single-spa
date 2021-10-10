@@ -4,16 +4,12 @@ const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "foxkey",
-    projectName: "gateway",
+    projectName: "global-state",
     webpackConfigEnv,
     argv,
   });
 
   return merge(defaultConfig, {
-    externals: [
-      "react-router-dom",
-      "@foxkey/design-system",
-      "@foxkey/global-state",
-    ],
+    // modify the webpack config however you'd like to by adding to this object
   });
 };

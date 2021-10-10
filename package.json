@@ -9,6 +9,7 @@
     "wrk:design-system": "yarn workspace @foxkey/design-system start",
     "wrk:gateway": "yarn workspace @foxkey/gateway start",
     "wrk:root": "yarn workspace @foxkey/root-config start",
+    "wrk:global-state": "yarn workspace @foxkey/global-state start",
     "prestart": "yarn install",
     "start": "npm-run-all --parallel wrk:*"
   },
