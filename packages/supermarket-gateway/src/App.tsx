@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// @ts-ignore:
+import { foxkeyTheme } from "@foxkey/design-system";
 
 export default function App() {
+  foxkeyTheme.globalStyles();
   return (
     <Router>
       <div>
