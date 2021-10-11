@@ -4,5 +4,9 @@
     "./packages/supermarket-design-system",
     "./packages/supermarket-gateway",
     "./packages/supermarket-global-state",
+    "./packages/supermarket-account",
+    "./packages/supermarket-inventory",
+    "./packages/supermarket-hr",
+    "./packages/supermarket-financial",
   ]
 }

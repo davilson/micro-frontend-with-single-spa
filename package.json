@@ -10,6 +10,10 @@
     "wrk:gateway": "yarn workspace @foxkey/gateway start",
     "wrk:root": "yarn workspace @foxkey/root-config start",
     "wrk:global-state": "yarn workspace @foxkey/global-state start",
+    "wrk:account": "yarn workspace @foxkey/account start",
+    "wrk:inventory": "yarn workspace @foxkey/inventory start",
+    "wrk:hr": "yarn workspace @foxkey/hr start",
+    "wrk:financial": "yarn workspace @foxkey/financial start",
     "prestart": "yarn install",
     "start": "npm-run-all --parallel wrk:*"
   },
