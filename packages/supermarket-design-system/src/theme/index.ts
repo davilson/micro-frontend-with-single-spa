@@ -9,18 +9,20 @@ export const {
   theme,
   createTheme,
   config,
+  prefix,
+  reset,
 } = createStitches({
   prefix: "foxkey-style",
   theme: {
     colors: {
-      brandPrimaryPure: "#ED1C24",
-      brandPrimaryLight: "#FBADB0",
-      brandPrimaryMedium: "#D51118",
-      brandPrimaryDark: "#5E080B",
-      brandSecondaryPure: "#BD8D28",
-      brandSecondaryLight: "#DCB35B",
-      brandSecondaryMedium: "#A47A23",
-      brandSecondaryDark: "#4C3A10",
+      brandPrimaryPure: "#F89A20",
+      brandPrimaryLight: "#ffd199",
+      brandPrimaryMedium: "#ffb051",
+      brandPrimaryDark: "#d17300",
+      brandSecondaryPure: "#ED1C24",
+      brandSecondaryLight: "#FBADB0",
+      brandSecondaryMedium: "#D51118",
+      brandSecondaryDark: "#5E080B",
       accentPure: "#940DCE",
       accentLight: "#DEB9EE",
       accentMedium: "#7C2E9E",
@@ -142,24 +144,7 @@ export const {
     bp4: "(min-width: 1200px)",
     bp5: "(min-width: 1400px)",
   },
-  utils: {
-    marginHorizontal: (value) => ({
-      marginLeft: value,
-      marginRight: value,
-    }),
-    marginVertical: (value) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
-    paddingHorizontal: (value) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    paddingVertical: (value) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-  },
+  utils: {},
 });
 
 export const globalStyles = globalCss({
