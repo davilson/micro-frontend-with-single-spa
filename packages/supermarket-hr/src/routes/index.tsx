@@ -1,14 +1,16 @@
 import { BrowserRouter, Switch } from "react-router-dom";
+import { foxkeyComponents } from "@foxkey/design-system";
 
 import Route from "./Route";
 import DefaultTemplate from "../templates/Default";
 
 export default function Routes() {
+  const { Title } = foxkeyComponents;
   return (
-    <BrowserRouter basename="financial">
+    <BrowserRouter basename="hr">
       <Switch>
         <Route path="/" template={DefaultTemplate} exact={true}>
-          <h1>Recursos humano</h1>
+          <Title>Recursos Humanos</Title>
         </Route>
       </Switch>
     </BrowserRouter>

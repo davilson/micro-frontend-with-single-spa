@@ -1,4 +1,4 @@
-import { Route as RouteComponent, Redirect } from "react-router-dom";
+import { Route as RouteComponent } from "react-router-dom";
 
 type RouteProps = {
   children: React.ReactNode;

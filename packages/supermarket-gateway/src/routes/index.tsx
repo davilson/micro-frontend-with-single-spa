@@ -16,36 +16,44 @@ export default function Routes() {
           isPrivate={false}
           template={CleanTemplate}
           exact={false}
-        >
-          <Parsel config={() => System.import("@foxkey/account")} />
-        </Route>
+          component={() => (
+            <Parsel config={() => System.import("@foxkey/account")} />
+          )}
+        />
         <Route
           path="/financial"
           isPrivate={true}
           template={PanelTemplate}
           exact={false}
-        >
-          <Parsel config={() => System.import("@foxkey/financial")} />
-        </Route>
+          component={() => (
+            <Parsel config={() => System.import("@foxkey/financial")} />
+          )}
+        />
         <Route
           path="/hr"
           isPrivate={true}
           template={PanelTemplate}
           exact={false}
-        >
-          <Parsel config={() => System.import("@foxkey/hr")} />
-        </Route>
+          component={() => (
+            <Parsel config={() => System.import("@foxkey/hr")} />
+          )}
+        />
         <Route
           path="/inventory"
           isPrivate={true}
           template={PanelTemplate}
           exact={false}
-        >
-          <Parsel config={() => System.import("@foxkey/inventory")} />
-        </Route>
-        <Route path="/" isPrivate={true} template={CleanTemplate} exact={true}>
-          <Redirect to="/financial" />
-        </Route>
+          component={() => (
+            <Parsel config={() => System.import("@foxkey/inventory")} />
+          )}
+        />
+        <Route
+          path="/"
+          isPrivate={true}
+          template={CleanTemplate}
+          exact={true}
+          component={() => <Redirect to="/financial" />}
+        />
       </Switch>
     </Router>
   );
