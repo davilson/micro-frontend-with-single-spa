@@ -10,10 +10,6 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    externals: [
-      "react-router-dom",
-      "@foxkey/design-system",
-      "@foxkey/global-state",
-    ],
+    externals: ["react-router-dom", "@foxkey/design-system"],
   });
 };

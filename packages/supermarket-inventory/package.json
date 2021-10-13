@@ -51,7 +51,6 @@
   },
   "dependencies": {
     "@foxkey/design-system": "^1.0.0",
-    "@foxkey/global-state": "^1.0.0",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
